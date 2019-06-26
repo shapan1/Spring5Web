@@ -12,7 +12,7 @@ public class Author {
    private String firstName;
    private String lastName;
 
-   @ManyToMany
+   @ManyToMany(cascade = CascadeType.ALL)
    private Set<Book> books = new HashSet<>();
 
    public Author() {}
